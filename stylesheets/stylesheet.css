@@ -1,5 +1,6 @@
 ﻿img.opacity {
 	-webkit-filter: brightness(0%);
+	-webkit-filter: contrast(100%);
 	-webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -9,6 +10,7 @@
 	
 img.opacity:hover {
 	-webkit-filter: brightness(5%);
+	-webkit-filter: contrast(110%);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
