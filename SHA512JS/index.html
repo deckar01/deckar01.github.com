@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>SHA512JS</title>
+<style>
+*{font-family:Monospace;margin:0 0 0 0;padding:0 0 0 0;}
+.info{width:498px;border:solid 1px #999999;padding-top:30px;padding-bottom:30px;}
+</style>
+</head>
+<body>
+<div style="width:500px;margin-left:auto;margin-right:auto;text-align:center;">
+<span style="font-size:104;color:#999999;">SHA512JS</span><br/>
+<span style="font-size:35;color:red;">H A S H &nbsp; L O C A L L Y</span><br/><br/>
+<input type="password" id="p" placeholder="Password + Salt" style="width:500px;padding:20px;text-align:center;"><br/>
+<button style="width:500px;padding:20px;" onclick="hash()" >SHA512 to Base64</button><br/>
+<input type="text" id="h" placeholder="CLICK THE BOTTON THEN COPY ME" style="width:500px;padding:20px;text-align:center;font-size:8;"><br/>
+<br/>
+<div class="info">
+Instructions:<br/>
+<br/>
+<div style="text-align:left;margin-left:30px;">
+1. Type a password<br/>
+2. Add a memorable salt (username, website, etc.)<br/>
+3. Click the button<br/>
+4. Copy the resulting Base64 encoded SHA512 hash<br/>
+5. Use the result as your password<br/>
+</div>
+<br/>
+</div>
+<br/>
+<div class="info" style="background-image:url('https://addons.cdn.mozilla.net/img/uploads/addon_icons/0/748-64.png');background-repeat:no-repeat;background-position:15px 15px;">
+<br/>
+Try the GreaseMonkey script: <a href="SHA512.min.user.js">SHA512.min.user.js</a><br/>
+[Ctrl] + Double Click to hash your passwords on the fly!<br/>
+<br/>
+</div>
+</div>
+<script src="SHA512.js"></script>
+<script>
+ctrlDown=0
+window.onkeydown=window.onkeyup=function(e){ctrlDown=e.ctrlKey}
+p=document.getElementById('p')
+h=document.getElementById('h')
+hash=function(){h.value=p.value=SHA512(p.value)}
+p.ondblclick=function(){if(ctrlDown)hash()}
+</script>
+</body>
+</html>
