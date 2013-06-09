@@ -148,7 +148,11 @@ $(document).ready(function(){
 			<div class="description"><p><p>The CircleGesture classes represents a circular finger movement.</p>
 <p>A circle movement is recognized when the tip of a finger draws a circle
 within the Leap field of view.</p>
-<p><img src="images/Leap_Gesture_Circle.png" alt="CircleGesture"></p>
+<p>&lt;img src=&quot;images/Leap_Gesture_Circle.png&quot;/&gt;</p>
+<p><strong>Important:</strong> To use circle gestures in your application, you must enable
+recognition of the circle gesture. You can enable recognition when you create
+the Leap Controller or start the Leap.loop().</p>
+<p>   TODO</p>
 <p>Circle gestures are continuous. The CircleGesture objects for the gesture have
 three possible states:</p>
 <ul>
@@ -373,7 +377,7 @@ progressed far enough for the recognizer to classify it as a circle.</li>
   
   <div class="location">
 
-  	<a href="lib_gesture_js.html#lineno149">gesture.js</a> at line 149
+  	<a href="_home_jared_GitHub_test_leapjs_lib_gesture_js.html#lineno149">gesture.js</a> at line 149
 
   </div>
 	
@@ -431,7 +435,7 @@ of the CircleGesture class from a Frame object.</p></p></div>
   
   <div class="location">
 
-  	<a href="lib_gesture_js.html#lineno173">gesture.js</a> at line 173
+  	<a href="_home_jared_GitHub_test_leapjs_lib_gesture_js.html#lineno179">gesture.js</a> at line 179
 
   </div>
 	
@@ -470,7 +474,7 @@ of the CircleGesture class from a Frame object.</p></p></div>
   
   <div class="location">
 
-  	<a href="lib_gesture_js.html#lineno180">gesture.js</a> at line 180
+  	<a href="_home_jared_GitHub_test_leapjs_lib_gesture_js.html#lineno186">gesture.js</a> at line 186
 
   </div>
 	
@@ -503,14 +507,14 @@ general direction as the pointable object drawing the circle. If you draw
 the circle counterclockwise, the normal points back toward the
 pointable. If the angle between the normal and the pointable object
 drawing the circle is less than 90 degrees, then the circle is clockwise.</p>
-<pre><code class="prettyprint source javascript">   var clockwiseness;
+<p>   var clockwiseness;
    if (circle.pointable.direction.angleTo(circle.normal) &lt;= PI/4) {
        clockwiseness = &quot;clockwise&quot;;
    }
    else
    {
        clockwiseness = &quot;counterclockwise&quot;;
-   }</code></pre></p></div>
+   }</p></p></div>
 
 
 <div class="details ">
@@ -522,7 +526,7 @@ drawing the circle is less than 90 degrees, then the circle is clockwise.</p>
   
   <div class="location">
 
-  	<a href="lib_gesture_js.html#lineno204">gesture.js</a> at line 204
+  	<a href="_home_jared_GitHub_test_leapjs_lib_gesture_js.html#lineno209">gesture.js</a> at line 209
 
   </div>
 	
@@ -569,7 +573,7 @@ frame.</p></p></div>
   
   <div class="location">
 
-  	<a href="lib_gesture_js.html#lineno221">gesture.js</a> at line 221
+  	<a href="_home_jared_GitHub_test_leapjs_lib_gesture_js.html#lineno226">gesture.js</a> at line 226
 
   </div>
 	
